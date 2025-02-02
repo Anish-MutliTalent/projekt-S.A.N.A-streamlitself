@@ -300,7 +300,7 @@ if feature == "General Chat" or feature == "Wikipedia Search" or feature == "Wol
 
 # PDF/TXT Summary
 if feature == "PDF/TXT Summary":
-     if "pdf" not in st.session_state:
+    if "pdf" not in st.session_state:
         st.session_state["pdf"] = ""
     uploaded_file = st.file_uploader("Upload a PDF or TXT file", type=["pdf", "txt"])
     if uploaded_file:
